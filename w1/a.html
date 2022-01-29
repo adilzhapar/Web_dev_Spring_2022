@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>All about HTML/CSS</title>
+        <!-- Style is CSS -->
+        <style>
+            body{
+                background-image: url("https://media.istockphoto.com/photos/blank-paper-background-picture-id184597196?b=1&k=20&m=184597196&s=170667a&w=0&h=NI8QkQYpEcM_acr_oGrvZxDL7risCR97D9KfNezr4S8=");
+            }
+            h1{
+                font-family: 'Courier New', Courier, monospace;
+                text-decoration: underline;
+            }
+            h2{
+                color:rgb(55, 117, 81);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+            }
+            
+            ul{
+                color: rgb(55, 117, 81);
+                font-size: x-large;
+            }
+            /* for id style: */
+            #sooner{
+                background-color:sienna;
+                font-family: cursive;
+            }
+            /* class style: */
+            .lyrics{
+                background-color: rgb(55, 117, 81);
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 20px;
+                line-height: 22px; 
+                /* line-height: 1.5em;  */
+                text-align: center;
+            }
+
+            #table_row{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+        </style>
+    </head>
+    <body>
+    <h1 id="begin">All about HTML/CSS</h1>
+
+    <!-- internal link via id -->
+    <a href="#info">Full info</a>
+    
+    <h2>Knocking on heaven's door</h2>
+
+    <h3 id="sooner">Soon webpage will be better</h3>
+    <p class="lyrics">
+        <strong>Mama, take this badge off of me</strong> <br>
+        I can't use it anymore <br>
+        It's gettin' dark, too dark to see <br>
+        I feel I'm knockin' on <em>heaven's door</em> <br>
+    </p>
+
+    <p class="lyrics">
+        Now I see fire <br>
+        Inside the mountain<br>
+        And I see fire<br>
+        Burning the trees<br>
+        And I see fire<br>
+        Hollowing souls<br>
+        And I see fire<br>
+        Blood in the breeze<br>
+    </p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8265xzUpRj3S9AdWCL4u6HaCQHYJNLLuJCw&usqp=CAU"
+    alt="This is the image" width=400 height=220>
+    
+    <ul id="info">
+        <li><a target="_blank" href="https://www.youtube.com/watch?v=rm9coqlk8fY">Song</a>
+        </li> 
+        <li><a href="https://www.youtube.com/watch?v=iMnvC56aBXM">Movie</a>
+        </li>
+    </ul>
+
+    <ol>
+        <li>One</li> 
+        <li>Two</li>
+        <!-- inner link -->
+        <li><a href="#begin">Up</a></li>
+    </ol>
+
+    <h3>Info about some rappers</h3>
+    <!-- Table making -->
+    <table>
+        <thead>
+            <tr id="table_row">
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Songs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/06e2bfc0-64be-444f-8330-dcebf03ab0c6/280x420" width=100 height=150></td>
+                <td><a target="_blank" href="https://www.google.com/search?q=Eminem&source=lmns&bih=678&biw=1378&client=opera&hs=Sbr&hl=ru&sa=X&ved=2ahUKEwj9kZ2OiNf1AhWOgSoKHaI2BuAQ_AUoAHoECAEQAA">Eminem</a></td>
+                <td>Higher, Venom, Lose yourself</td>
+            </tr>
+            <tr>
+                <td><img src="https://salvemusic.com.ua/wp-content/uploads/2021/01/21-savage3-768x545.jpg" width=100 height=150></td>
+                <td><a target="_blank" href="https://www.google.com/search?q=21+savage&source=lmns&bih=678&biw=1378&client=opera&hs=ZKC&hl=ru&sa=X&ved=2ahUKEwi536n8iNf1AhXJuyoKHblWAr8Q_AUoAHoECAEQAA">21 Savage</a></td>
+                <td>a lot, ball w/o you</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- code writing -->
+    <code>
+        cout << "Hello world" << endl;<br>
+        print("Hello world!")<br>
+        System.out.println("Hello world");<br>
+    </code>
+
+    </body>
+</html>
