@@ -1,54 +1,115 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>All about HTML/CSS</title>
-        <!-- Style is CSS -->
-        <style>
-            body{
-                background-image: url("https://media.istockphoto.com/photos/blank-paper-background-picture-id184597196?b=1&k=20&m=184597196&s=170667a&w=0&h=NI8QkQYpEcM_acr_oGrvZxDL7risCR97D9KfNezr4S8=");
-            }
-            h1{
-                font-family: 'Courier New', Courier, monospace;
-                text-decoration: underline;
-            }
-            h2{
-                color:rgb(55, 117, 81);
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: large;
-            }
-            
-            ul{
-                color: rgb(55, 117, 81);
-                font-size: x-large;
-            }
-            /* for id style: */
-            #sooner{
-                background-color:sienna;
-                font-family: cursive;
-            }
-            /* class style: */
-            .lyrics{
-                background-color: rgb(55, 117, 81);
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 20px;
-                line-height: 22px; 
-                /* line-height: 1.5em;  */
-                text-align: center;
-            }
 
-            #table_row{
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            }
+<head>
+    <meta charset="utf-8">
+    <title>All about HTML/CSS</title>
+    <!-- Style is CSS -->
+    <style>
+        .html {
+            color: blue;
+            font-size: larger;
+        }
 
-        </style>
-    </head>
-    <body>
-    <h1 id="begin">All about HTML/CSS</h1>
+        body {
+            background-image: url("https://media.istockphoto.com/photos/blank-paper-background-picture-id184597196?b=1&k=20&m=184597196&s=170667a&w=0&h=NI8QkQYpEcM_acr_oGrvZxDL7risCR97D9KfNezr4S8=");
+        }
+
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: rgb(55, 117, 81);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            border: 3px dashed rgb(83, 40, 15);
+            padding: 6px
+        }
+        h3{
+            width: 70%;
+            height: 10%;
+            overflow: hidden;
+        }
+
+        ul {
+            color: rgb(55, 117, 81);
+            font-size: x-large;
+        }
+
+        /* for id style: */
+        #sooner {
+            background-color: sienna;
+            font-family: cursive;
+        }
+
+        /* class style: */
+        .lyrics {
+            background-color: rgb(55, 117, 81);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            line-height: 22px;
+            /* line-height: 1.5em;  */
+            text-align: center;
+            height: 90px;
+            overflow-y: auto;
+            width: 15%;
+            position: absolute;
+            /* position: relative, fixed; */
+        }
+
+        #table_row {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #first_group {
+            background-color: rgb(55, 117, 71);
+            width: 60%;
+            /* margin: 40px 0px 7px 150px; */
+        }
+
+        .all{
+            width: 700px;
+            margin: 0px 0px 2px 100px;
+            border: 3px solid sienna;
+            border-top: 10px solid rgb(55, 117, 71);
+            border-bottom: 10px solid rgb(55, 117, 71);
+            padding: 5px;
+        }
+
+        #info{
+            margin: 10px 0px 5px 12px;
+            padding: 10px;
+        }
+
+        #Sheeran{
+            top: 44%;
+            left: 27%
+        }
+
+        #DiPic{
+            float:left;
+            margin-right: 15px;
+        }
+        #tb{
+            float: right;
+            margin-left: 20px;
+        }
+        .actor_info{
+            clear: both;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="all">
+    <h1 id="begin">All about <span class="html">HTML/CSS</span></h1>
 
     <!-- internal link via id -->
     <a href="#info">Full info</a>
-    
+
     <h2>Knocking on heaven's door</h2>
 
     <h3 id="sooner">Soon webpage will be better</h3>
@@ -59,7 +120,7 @@
         I feel I'm knockin' on <em>heaven's door</em> <br>
     </p>
 
-    <p class="lyrics">
+    <p class="lyrics" id="Sheeran">
         Now I see fire <br>
         Inside the mountain<br>
         And I see fire<br>
@@ -70,23 +131,24 @@
         Blood in the breeze<br>
     </p>
 
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8265xzUpRj3S9AdWCL4u6HaCQHYJNLLuJCw&usqp=CAU"
-    alt="This is the image" width=400 height=220>
-    
-    <ul id="info">
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=rm9coqlk8fY">Song</a>
-        </li> 
-        <li><a href="https://www.youtube.com/watch?v=iMnvC56aBXM">Movie</a>
-        </li>
-    </ul>
+    <div id="first_group"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8265xzUpRj3S9AdWCL4u6HaCQHYJNLLuJCw&usqp=CAU"
+            alt="This is the image" width=400 height=220>
+
+        <ul id="info">
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=rm9coqlk8fY">Song</a>
+            </li>
+            <li><a href="https://www.youtube.com/watch?v=iMnvC56aBXM">Movie</a>
+            </li>
+        </ul>
+    </div>
 
     <ol>
-        <li>One</li> 
+        <li>One</li>
         <li>Two</li>
         <!-- inner link -->
         <li><a href="#begin">Up</a></li>
     </ol>
-
+    <div id="tb">
     <h3>Info about some rappers</h3>
     <!-- Table making -->
     <table>
@@ -99,24 +161,30 @@
         </thead>
         <tbody>
             <tr>
-                <td><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/06e2bfc0-64be-444f-8330-dcebf03ab0c6/280x420" width=100 height=150></td>
-                <td><a target="_blank" href="https://www.google.com/search?q=Eminem&source=lmns&bih=678&biw=1378&client=opera&hs=Sbr&hl=ru&sa=X&ved=2ahUKEwj9kZ2OiNf1AhWOgSoKHaI2BuAQ_AUoAHoECAEQAA">Eminem</a></td>
+                <td><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/06e2bfc0-64be-444f-8330-dcebf03ab0c6/280x420"
+                        width=100 height=150></td>
+                <td><a target="_blank"
+                        href="https://www.google.com/search?q=Eminem&source=lmns&bih=678&biw=1378&client=opera&hs=Sbr&hl=ru&sa=X&ved=2ahUKEwj9kZ2OiNf1AhWOgSoKHaI2BuAQ_AUoAHoECAEQAA">Eminem</a>
+                </td>
                 <td>Higher, Venom, Lose yourself</td>
             </tr>
             <tr>
-                <td><img src="https://salvemusic.com.ua/wp-content/uploads/2021/01/21-savage3-768x545.jpg" width=100 height=120></td>
-                <td><a target="_blank" href="https://www.google.com/search?q=21+savage&source=lmns&bih=678&biw=1378&client=opera&hs=ZKC&hl=ru&sa=X&ved=2ahUKEwi536n8iNf1AhXJuyoKHblWAr8Q_AUoAHoECAEQAA">21 Savage</a></td>
+                <td><img src="https://salvemusic.com.ua/wp-content/uploads/2021/01/21-savage3-768x545.jpg" width=100
+                        height=120></td>
+                <td><a target="_blank"
+                        href="https://www.google.com/search?q=21+savage&source=lmns&bih=678&biw=1378&client=opera&hs=ZKC&hl=ru&sa=X&ved=2ahUKEwi536n8iNf1AhXJuyoKHblWAr8Q_AUoAHoECAEQAA">21
+                        Savage</a></td>
                 <td>a lot, ball w/o you</td>
             </tr>
         </tbody>
     </table>
+</div>
 
-    <!-- code writing -->
-    <code>
-        cout << "Hello world" << endl;<br>
-        print("Hello world!")<br>
-        System.out.println("Hello world");<br>
-    </code>
+    <div class="actor_info">
+        <img id="DiPic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Leonardo_Dicaprio_Cannes_2019.jpg/330px-Leonardo_Dicaprio_Cannes_2019.jpg" alt="Dicaprio" height=250>
+        <p>Born in Los Angeles, DiCaprio began his career in the late 1980s by appearing in television commercials. In the early 1990s, he had recurring roles in various television shows, such as the sitcom Parenthood, and had his first major film part as author Tobias Wolff in This Boy's Life (1993). At age 19, he received critical acclaim and his first Academy Award and Golden Globe Award nominations for his performance as a developmentally disabled boy in What's Eating Gilbert Grape (1993). He achieved international stardom with the star-crossed romances Romeo + Juliet (1996) and Titanic (1997). After the latter became the highest-grossing film at the time, he reduced his workload for a few years. In an attempt to shed his image of a romantic hero, DiCaprio sought roles in other genres, including crime drama in Catch Me If You Can (2002) and Gangs of New York (2002), which marked the first of his many successful collaborations with director Martin Scorsese.</p>
+    </div>
 
-    </body>
+</body>
+
 </html>
