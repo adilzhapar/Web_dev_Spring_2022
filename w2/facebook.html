@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .first{
+            background-color: #F0F2F5;
+            padding-bottom: 112px;
+        }
+        #logo{
+            margin: -30px;
+        }
+        div.l1{
+            width: 470px;
+            height: 289px;
+            padding: 112px 0px 0px;
+            position: absolute;
+            top: 90px;
+            left: 125px;
+        }
+        #text{
+            font-size: 28px;
+            line-height: 29px;
+            width: 390;
+            height: 82;
+            padding-bottom: 20px;
+            color: #1c1e21;
+            font-family: Helvetica, Arial, sans-serif;
+            
+        }
+        div.r1{
+            width: 396px;
+            height: 496px;
+
+        }
+        div.whiteframe{
+            width: 390px;
+            height: 350px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 6px;
+            position:absolute;
+            /* display: flex; */
+            top: 140px;
+            left: 700px;
+            box-shadow: 0px 1px 3px 0px rgb(168, 167, 167);
+        }
+        #log{
+            width: 334px;
+            height: 22px;
+            padding: 14px 16px 14px 16px;
+            font-size: 17px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        #pas{
+            width: 334px;
+            height: 22px;
+            padding: 14px 16px 14px 16px;
+            font-size: 17px;
+            border-radius: 6px;
+            border: 1px solid #dddfe2;
+            position: absolute;
+            top: 85px;
+            left: 10px;
+        }
+        #but{
+            background-color: #1877f2;
+            position: absolute;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 370px;
+            left: 10px;
+            top: 150px;
+            cursor: pointer;
+        }
+        #but2{
+            background-color: #42B72A;
+            position: absolute;
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 48px;
+            padding: 0 16px;
+            width: 260px;
+            height: 48px;
+            top: 260px;
+            left: 20px;
+
+        }
+        #enter{
+            color: white;
+        }
+        
+        #log:focus, #pas:focus {
+	        outline: none;
+      	    border: 1px solid #1178f2;
+            box-shadow: 0px 0px 5px 0px #1178f2;
+        }
+        a#fpas{
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #1877f2;
+            position:absolute;
+            top: 210px;
+            left: 140px;
+            text-decoration: none;
+        }
+        a#fpas:focus, a#fpas:hover{
+            text-decoration-line: underline;
+        }
+        div.line{
+            border-bottom: 1px solid #dadde1;;
+            position: absolute;
+            top: 250px;
+            width: 370px;
+            left: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="l1">
+            <img id="logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook" width="301.06" height="106">
+            <p id="text">Facebook  помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+        </div>    
+        <div class="r1">
+            <div class="whiteframe">
+                <input id="log" type="text" placeholder="Электронный адрес или номер телефона">
+                <input id="pas" type="password" placeholder="Пароль">
+                <button id="but"><span id="enter"><strong>Вход</strong></span></button>
+                <a id="fpas" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Забыли пароль?</a>
+                <div class="line"></div>
+                <button id="but2"><span id="new_acc"><strong>Создать новый аккаунт</strong></span></button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
