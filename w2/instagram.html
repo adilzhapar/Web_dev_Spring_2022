@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #FAFAFA;
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+        }
+        .left{
+            width: 50%;
+            float: left;
+            height: 600px;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 60px;
+            
+        }
+        .phone{
+            padding-right: 10px;
+            padding-top: 30px;
+        }
+        .right{
+            margin-bottom: 60px;
+            width: 50%;
+            height: 620px;
+            float: right;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .whiteframe_1{
+            background-color: #fff;
+            width: 350px;
+            height: 382px;
+            border: 1px solid rgba(var(--b6a,219,219,219),1);
+            border-radius: 1px; 
+            margin-left: 20px;
+            margin-top: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo{
+            margin-top: 17px;
+            padding-top: 10px;
+        }
+        .enter{
+            width: 258px;
+            height: 35px;
+            font-size: 11px;
+            background: rgb(250,250,250);
+            border: 1px solid rgb(167, 167, 167);
+            border-radius: 3px;
+        }
+        #log{
+            margin-top: 30px;
+            margin-bottom: 5px;
+        }
+        #log:focus, #pas:focus{
+            outline: none;
+            border: 1.1px solid rgb(104, 104, 104);
+        }
+        #enter{
+            margin-top: 10px;
+            width: 264px;
+            height: 30px;
+            background-color: #0095F6;
+            border: 0;
+            border-radius: 3px;
+            cursor: pointer;
+            
+        }
+        #en{
+            color: white;
+            font-size: 14px;
+        }
+        #or{
+            width: 100%; 
+            text-align: center; 
+            border-bottom: 1px solid #DBDBDB; 
+            line-height: 0.1em;
+            margin: 25px 0 20px;
+        }
+        #or span{
+            background-color: #fff;
+            padding: 0 10px;
+            color: #8E8E8E;
+            font-size: 13px;
+        }
+        #facebut{
+            background-color: #fff;
+            border: 0;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #face{
+            color: #385185;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        #facel{
+            vertical-align: bottom;
+        }
+        #fpas{
+            text-decoration: none;
+            color: #00376B;
+            font-size: 12px;
+            padding: 20px;
+        }
+        .whiteframe_2{
+            background-color:#fff;
+            width: 350px;
+            height: 60px;
+            margin-top: 10px;
+            border: 1px solid rgb(219,219,219);
+            border-radius: 1px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #reg{
+            text-decoration: none;
+            color: #0095F6;
+            font-size: 14px;
+        }
+        #app{
+            margin-left: 120px;
+            font-size: 14px;
+        }
+        .apps{
+            /* width: 45%; */
+            margin-left: 60px;
+            margin-top: 7px;
+            display: flex;
+            gap: 10px;
+        }
+
+        
+        ul li{
+            list-style-type: none;
+            margin-left: 10px;
+            color: #8E8E8E
+            
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        
+        li#meta{
+            cursor: auto;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            justify-content: center;
+        }
+        .foot{
+            width: 100%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="first">
+        <div class="left">
+            <img src="https://lh3.googleusercontent.com/B0WB--uLTGQHt4Hffy-VT0sycou2SbDVwvsT43pXb35JCUI-tJHt-AQcqRCQQEx8TKInE31kwPwGbHXP7J6pKRxSDwpGXK_ytX7my8ev-g4GPL5mMRshcRFQeeDKnLLSJfYZgNpQXU6y6vqBHXnI_msTJwIHIR-UdJd0wsNx0gp5jK0ykzzxtp7ZuSsuxnHBdetBm6WlV32mHZCpX3eX-xCtpdR1p6SUvUgX9kaLzzGbddX1LhWPMTP9dOWG_NaBFXogYivLGQQl4WpL9ZaKofeuzJLaq3AlKRkrewMKx_ZCF6U2UN_y77kwUSCUyNWV22cMxkP7Srvz6YEsDfEFJHd2ia1x8s2-sW47ipGWBFtu7rmqQxW_YUKS6F69KEeoqgSQ7-uX9JmzPqxM9tgjiZtDpfSaLn4cwURCLD2eWEUA32Fslgq2guuRcD8Fw2M_a_c4IySls63WEfTZN0tp9fkSqW_opClpY1wrjRr25pO57tqMIt-p2NVS_p1U_jkXSODze1oWfIOggunYk7_LNz8xFvBBrHZaN6G0c36XgqvBOjeLPKNtIyqJjAWGPsJ3Q0ExCnC28_Rx0X6YWCMYmoiJJk336U3t_KQgcUcLfBDjjtf-mjGYMKxQD5JMy2EVVrFjaT6AIDs97c9cKixdP9y3dSQ4WafjPajjLnpgKv9FmIyi2kkkCFteKh0abG6saJ8SnC_FGaaSqhLp9A8nOkw=w571-h889-no?authuser=1" alt="phone" class="phone" height="590">
+        </div>
+        <div class="right">
+            <div class="whiteframe_1">
+                <img src="https://lh3.googleusercontent.com/WM6g93sditGJzNfnNKTP-l0eufbrFFr4ERfKuaZgBPHD8sEkbQRTf9CahBytsdY-eMvG_NNnMCIOOte6Q2VHgHV7kkdPzGdn7wwA9Kpc07B12T5NMYLJ3LAoF8HFt5cQVGjT1wWL2z2cWGAWgruw2pmI30KweTN-dqBbkwVLQv9iMzhM17JDCaLtisXs5WApGUbsYT5bH0LkSW2nJiwhR-pVqdXiScBl99CpuX4UXKe4OTMdg03bXqdt0ERQ3wfTS1HS0P-7RhbjR5q-Pk1XgXFgMpY4NxVJAMTuMnXcp4vYB5t8DBOMaRaVYTmnMnFTEoh9j3WqB4NajzFpGhh4lA6kUqIlkD2Y6jEvNHODyS43vZTaNg42pO75MvO3FzBs0lq0-WVfWz0U0LtZv_edt4m0kB7xuU2f5POigTfY4uzWP5LZAbm2Kn31VU2MCRStR7mhFCZVezkRn1gmSKA1tXBYkAghjSSpG4CyVk6h7yDHfTxxwG3DnIQ5gjVhi4bBOYKBZX-A7d7Qih8IK1AFDiOy0cSG96zQIxj02bFKuKwwSbuuHJ9jX8ME7ZK7Z1I5z0WXYrruYnADptP-L9FrIpE_oaT-3AA1_3vd__dAEToFurdJEgqMrbD8BWj6RUu1a1uoLD6GAb6oAxZiiTq4nIJOtnp1DeNJcet5RfnI9mN81WXzClN5Qa6cHFwWDEV4x0rtVpsSQIUfUoQBCvAPOu0=w271-h89-no?authuser=1" alt="logo" class="logo" width="180px">
+                <input class="enter" id="log" type="text" placeholder="Телефон, имя пользователя или эл.адрес">
+                <input class="enter" id="pas" type="password" placeholder="Пароль">
+                <button id="enter"><span id="en"><strong>Войти</strong></span></button>
+                <p id="or"><span><strong>ИЛИ</strong></span></p>
+                <button id="facebut"><img src="https://lh3.googleusercontent.com/s0R7ny674eHkJxofpTu2Rjo7H3yZt44XQdhCrox1UMgrNA1-PBflGOdi0w_96AJHTZaSOw0o-Uzwf3gcehqc-GfVVokNSnIapi07BXuoM2Mjg7ShniqxgszhNwOH80Z8HfpZlcc4i_bgEcHpbSuQCfwBcOz7PrUW3SKMimEHULvzOBgIUPSdZRWSpD5KVV46ynqC3odvwF1PsXPKUPh06HwZIFf39FssjYP7zIpbU_-ZF5_QX35Kl3fVyQO6xgP6DFC87PZPUSKJpRDBdPOyvTgliEMYfFwt-UvoZLZk1aRL2YLp55N3uvyJd-oxpRg5UjdaKvjK1-G4twoaxWbu2ItOd9GXTvS-JQr7E3w_hBTiQJ2rNi9AxTTEqQ4SCIijU7cxwpd1bOtlveJ5_tR0WGls7INMHIMEVaeab9UqLepSkicgosLa4VphyZUeEDs5H8XPQ6cTzPbkO2isbxYMt7ZH67R-DScr9bEvSAoWzVnjSBSzDoifkVH70w9kQO9GbbUFJ-5VSrT67vaLsnZvltPXtY23wr3f4n0FcdW9lW_IsoCfN2NSiV-FtMoZ4VpC4L5mGGsospdJNP5X4jMUbTM-hOFvkm0in12D9vsOybCb4urNHCheavUZNLZhWGg6MXm6207E5_Tdmj1mt01fYYdvSEQ5vipVgzp9zbS5YRo3Sfd2wXnxZbJAdq5CPPGxZdpWxzko-yWaEHpAi-hOEvg=w26-h29-no?authuser=1" alt="facebook" width="17px" id="facel"><span id="face"><strong>Войти через Facebook</strong></span></button>
+                <a id="fpas" href="https://www.instagram.com/accounts/password/reset/"><span>Забыли пароль?</span></a>
+            </div>
+            <div class="whiteframe_2">
+                <p>У вас еще нет акаунта? <a id="reg" href="https://www.instagram.com/accounts/emailsignup/"><span id="reg">Зарегистрироваться</span></a></p>
+            </div>
+            <p id="app">Установите приложение.</p>
+            <div class="apps">
+                <a id="appstore" href="https://apps.apple.com/app/instagram/id389801252?vt=lo"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_russian-ru.png/bfba6d0fd6bd.png" width="136px"></a>
+                <a id="play" href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D90D650BF-3BBD-485C-8271-F6E1DA6901B4%26utm_content%3Dlo%26utm_medium%3Dbadge"><img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_russian-ru.png/4c70948c09f3.png" width="136px"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="foot">
+            <li>Meta</li>
+            <li>Информация</li>
+            <li>Блог</li>
+            <li>Вакансии</li>
+            <li>Помощь</li>
+            <li>API</li>
+            <li>Конфедициальность</li>
+            <li>Условия</li>
+            <li>Популярные аккаунты</li>
+            <li>Хэштеги</li>
+            <li>Места</li>
+            <li>Instagram Lite</li>
+        </ul>
+        <ul class="second">
+            <li>Красота</li>
+            <li>Танцы</li>
+            <li>Фитнес</li>
+            <li>Еда и напитки</li>
+            <li>Дом и сад</li>
+            <li>Музыка</li>
+            <li>Изобразитиельное искусство</li>
+        </ul>
+        <ul class="third">
+            <li>Русский</li>
+            <li id="meta">© 2022 Instagram from Meta</li>
+        </ul>
+    </div>
+</body>
+</html>
