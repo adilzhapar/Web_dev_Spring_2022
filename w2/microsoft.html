@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;;
+        }
+        .b{
+            border: 1px solid blue;
+        }
+        .toggle{
+            height: 54px;
+            /* margin: 0px 5px; */
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 70px;
+        }
+        .left{
+            color:black;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 25px;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+        .middle{
+            margin: 0 68px 50px;
+            cursor:pointer;
+        }
+        .bottom{
+            display: flex;
+            margin-left: 68px;
+            margin-right: 53px;
+            margin-bottom: 40px;
+            justify-content: flex-end;
+        }
+        .lpic{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 99.9%;
+        }
+        #l-a{
+            color: black;
+        }
+        #last-a{
+            color: #0067B8;
+            font-size: 15px;
+
+        }
+        #last-a:hover{
+            border-bottom: 2px solid #0067B8;
+        }
+        .ltext{
+            width: 95%;
+        }
+        
+        .pic{
+            background-image: url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLAmj?ver=35aa&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712");
+            background-size: 1122px 420px;
+            height: 420px;
+            width: 99.9%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        h2{
+            font-size: 24px;
+            color: white;
+            width: 440px;
+            height: 60px;
+            margin-top: -30px;
+            margin-left: 60px;
+        }
+        #tt{
+            color: white;
+            width: 440px;
+            margin-left: 60px;
+            margin-top: -10px;
+        }
+        #d_a{
+            background-color: white;
+            width: 260px;
+            height: 40px;
+            margin-top: 7px;
+            margin-left: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #pc-a{
+            background-color: white;
+            font-size: 15px;
+            line-height: 18.5px;
+            font-weight: 500;
+        }
+        #pc-a:hover{
+            border-bottom: 2px solid black;
+        }
+        #logo{
+            width: 120px;
+        }
+        .atog{
+            color: black;
+            font-size: 13px;
+        }
+        .atog:hover{
+            border-bottom: 2px solid black;
+            /* text-decoration: underline; */
+        }
+        #korzina{
+            margin-top: 3px;
+        }
+        #person{
+            margin-top: 4px;
+            margin-left: 2px;
+        }
+        #prod{
+            margin-right: 30px;
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .l-img:hover{
+            filter: brightness(105%);
+        }
+    </style>
+</head>
+<body>
+    <div class="toggle">
+        <div class="left">
+            <a href="https://www.microsoft.com/ru-ru"><img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="logo" id="logo"></a>
+            <a class="atog" href="https://www.microsoft.com/ru-ru/microsoft-365?rtc=1">Microsoft 365</a>
+            <a class="atog" href="https://www.microsoft.com/ru-ru/microsoft-365/microsoft-office?rtc=1">Office</a>
+            <a class="atog" href="https://www.microsoft.com/ru-ru/windows/">Windows</a>
+            <a class="atog" href="https://www.xbox.com/ru-RU/">Xbox</a>
+            <a class="atog" href="https://support.microsoft.com/ru-ru">Поддержка</a>
+        </div>
+        <div class="right">
+            <a class="atog" id="prod" href="">Продукты Майкрософт</a>
+            <a><img src="https://lh3.googleusercontent.com/imKe_3hOV2dejrKlhSXiR5For6ii6K2iqoh416dvFiT-CyxYjS16HogwnFG2QyY8de9viVHrmQ0N_vzsJiBOkYH6JxLJUKVoI7gaailCwx0qNN-qJ9V2FfIDg4El_5-pDotrQtqgCxTWsJ8AxuGGvuri57yv_7sxb3H9EX1cnUQ8rZsyvT_tfDnE_1mEdmvzpZDNaNall10AVJVqOZClO1X-FUcZpQUAWnpe8BdqgaA0GNlNkMAEmJn6oYpDgQlvRMWWiSi76TjScVZDVBEJOKtU9-N7QMCqPkVG5pKAB6hsbvlIz3-rTP6tpEEQvZIAWaLozN7blGvyRXyAe_0SUemNTkm9tKT_m1Q63Z92Sf-HHJLVx8ifMoFwuVlPi13vXhj8T_cpWFE-hCxlBsTbEgq0ic4xehrt7CD881dy419ktxzIWPg1uY0TPRcYWW_JlQ9xYYydBGyABU51lflSz7IbKvRMs83hAAn0mFKsq_jyrSQ87jezGS--kDwuc748xJMCk1Dst78LVTg1CE2qg5PNdolo1Z5LJvbE2E2VpLOBPidjHx-9iPkRyeCnNhbirwTXgyLhnznix8sbXb1mr0Zkw8s0JD2yYwvrCCshRHnkAoX5q6KCxPuo779EDY-rXcEbNxgO3A5WUHz-ZF25JsECNX_oE2kNj5KCeWE_ceGTl3GNaZKPPGRXxtttdox6985vfhyl7w0Di5PeiU9AWK4=w38-h42-no?authuser=1" width="25"></a>
+            <a><img id="korzina" src="https://lh3.googleusercontent.com/jVMfGVh7UxSaW96HEUT6zqoXvt34p_qdVTU4aPI2SErN0BpVSVbPZoF1IyCdsxDmvWKJRrZjrrfdgvnZTCx0Lm0XB0F2ps-knSMkrO4y8mSraNT33KbdqVxDNDMKrw8PygRRVnNub8Fy-WocKj1CmqLd11ou47nuFynEQ88oTJoU1nteknJOOnupKq9EX42TjUAEJM1A-D51PH4frenMG3S21pldecHX2XgbHpnQf49Da_4dXDnAw0rv4HY4uq_9NNLt5zDoLZ3VxLiwdMHV16Et3Iq_kQBUTSO4UX6AsVHdPTxw2KFBPk6EzB8BfJhDP_Q7GK4oMTVoeiiVEO8CsFOLgOhBbVqjAPpkJeFeXJDRN8sNeC1DBe9CtBFdjov2jqcirh4YGKUYwYMufvrSTSlKfRkLkiZ8icA9y-muHeS1a1SaLZV8mINRf1_C8xS87GcKgYWyCyMYIeErLO0ebBToUWlNjmqn6VsIsSfRWoo0HAHhrktN9JarWGt5F5uw4LiwQF3FBSjsF5Wxsc4NzCdjRWC7DaUSUq-w3jFjbSJpFtpOAlthHNOw0ltOh_VYZD_m25Fr_unHvIHO108OB4LBIbqGktsBSCCiePTcYICZJDlKAnC38vDrSIWlN0BmO_EwLbqEJWHjBVJ9BxNZkCl0mE0c4kQElQoapLb0KeMTYIK8Oc5yQ5MDclQCUuTlroazJalgSqDLy2QKrt33oOw=w36-h38-no?authuser=1" width="25"></a>
+            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&rver=7.3.6963.0&wp=MBI_SSL&wreply=https%3a%2f%2fwww.microsoft.com%2fru-ru&lc=1049&id=74335&aadredir=1"><img id="person" src="https://lh3.googleusercontent.com/pxYSGmvd7u_Nj_5sIZE_cxHH6BAGdWtqBxvMLEybOpuFkz_Cc_ZbkKyS541HSHymSMFIDtQQVlM9SqsCFOTG-QPa-cd0CZjOfka-gWQmwX-6vcoEMKOKLFqfv1C4Ec8tKnmSbJx3VrOykGIsk9Va_ExNYzIIMIs2WkxtZEuYDLU9IkxN6nfYT2d9vZBLsSYlXBroD1UnwiQ2GsdAaUGYD5xdSJMgno9gU3zIMuct9AvP7_kE18atdmF0QmP0pYCG_HB-mcGLJZ2DjKQqDcj0j7L3l582nG4rOqtLnwi_YwkvQD1HPnw8dtc50f4EteRuhGcfQfHG3hpb-CU9LEY3Vot5yFGYRHG6HeUREZbBifKNVv40d1uqYas5tEPeTxB8wyVVlGmakBIOyx74KBYPMwLLRDbtwgTlIzHpTiEv9g-l3boDoFdKWkCNZP6zu8k9-CMr2Fa-_FM2TLQzp3L0d6OAqQRHtUXezI7vrKmT5zNPx5vFBgAznbwGTtC2iQrc8Ksr8JsU2w1MbOqhGGAEboWPgxOJ9TL78shgGGX4bgLyKJ2ffbx5kzk1Aouly3Vtl55AoTHP6ZvRM_kSU_0vVMMjMGDJVfhd8UNQlVIItE1Q25_dr7-zXnyNihxV4w9beySLHJRyWpgfhgi-lySxb8EQnc1H311xs7xElk7OAjNHS-4xY5_tDNIKyqCBs_4blB76hrheyxKINDpfhe--PEU=w54-h59-no?authuser=1" width="37"></a>
+        </div>
+    </div>
+    <a href="https://www.microsoft.com/ru-ru/windows/windows-11?icid=mscom_marcom_H1a_Win11PChlth#pchealthcheck"><div class="middle">
+        <div class="pic">
+            <h2>Разработано для жизни - сегодня и в будущем</h2>
+            <p id="tt">Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете еще ближе к тому, что успели полюбить.</p>
+            <div id="d_a"><a id="pc-a">Проверьте, готов ли ваш ПК ></a></div>
+        </div>
+    </div></a>
+    <div class="bottom">
+
+        <a id="l-a" href="https://www.xbox.com/ru-ru/consoles/xbox-series-x?icid=mscom_marcom_CPH1a_XboxSeriesX"><div class="lpic" id="first">
+            <img class="l-img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4mHqh?ver=97c5&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true" alt="xbox" width="260px">
+            <h3>Xbox Series X</h3>
+            <p class="ltext">Самая быстрая и мощная консоль Xbox в истории.</p>
+            <a id="last-a" href="https://www.xbox.com/ru-ru/consoles/xbox-series-x?icid=mscom_marcom_CPH1a_XboxSeriesX">За покупками ></a>
+        </div></a>
+
+        <a id="l-a" href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3"><div class="lpic" id="second">
+            <img class="l-img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rzE2?ver=aa0b&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true" alt="edge" width="260">
+            <h3>Microsoft Edge</h3>
+            <p class="ltext">Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+            <a id="last-a" href="https://www.microsoft.com/ru-ru/edge?form=MI13F3&OCID=MI13F3">Скачать ></a>
+        </div></a>
+
+        <a id="l-a" href="https://www.microsoft.com/ru-ru/microsoft-365/onedrive/online-cloud-storage?icid=mscom_marcom_CPH3a_OneDrive"><div class="lpic" id="third">
+            <img class="l-img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3hD2k?ver=6539&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true" alt="oneDrive" width="260">
+            <h3>Microsoft OneDrive</h3>
+            <p class="ltext">Сохраняйте свои файлы и фотографии на OneDrive - они будут доступны с любого устройства и где угодно.</p>
+            <a id="last-a" href="https://www.microsoft.com/ru-ru/microsoft-365/onedrive/online-cloud-storage?icid=mscom_marcom_CPH3a_OneDrive">Подробнее ></a>
+        </div></a>
+
+        <a id="l-a" href="https://www.microsoft.com/ru-ru/microsoft-365/onenote/digital-note-taking-app?icid=mscom_marcom_CPH4a_OneNote"><div class="lpic" id="fourth">
+            <img class="l-img" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/REGxSz?ver=5bf8&q=90&m=6&h=157&w=279&b=%23FFFFFFFF&l=f&o=t&aim=true" alt="oneNote" width="260">
+            <h3>OneNote</h3>
+            <p class="ltext">Приведите свои заметки и дела в порядок</p>
+            <a id="last-a" href="https://www.microsoft.com/ru-ru/microsoft-365/onenote/digital-note-taking-app?icid=mscom_marcom_CPH4a_OneNote"> Узнать больше></a>
+        </div></a>
+    </div>
+</body>
+</html>
