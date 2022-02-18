@@ -85,13 +85,14 @@ h3{
 }
 .task p{
     font-size: 20px;
-    max-width: 80%;
-    width: 80%;
+    max-width: 85%;
+    width: 85%;
     
 }
 #trash{
     background-color: cornsilk;
     border: none;
+    margin-bottom: 1%;
 }
 #trash:hover{
     cursor: pointer;
