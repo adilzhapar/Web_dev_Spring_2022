@@ -31,6 +31,12 @@ function add(){
     }
 }
 
+function erase(){
+    while(list.firstChild){
+        list.removeChild(list.firstChild);
+    }
+}
+
 function remove(){
     this.parentNode.remove();
 }

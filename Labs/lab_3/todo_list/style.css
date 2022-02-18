@@ -47,18 +47,17 @@ h3{
     border: 1px solid black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#in:focus, #but:hover{
+#in:focus, #but:hover, #cl:hover{
     outline: none;
     border: 2px solid rgb(170, 96, 61);
     cursor: auto;
 }
-#but:hover{
+#but:hover, #cl:hover{
     cursor: pointer;
 }
-#but{
-    margin-right: 2%;
+#but, #cl{
+    /* margin-right: 2%; */
     font-size: 20px;
-    font-weight: bold;
     background-color: antiquewhite;
     border: 1px solid black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
