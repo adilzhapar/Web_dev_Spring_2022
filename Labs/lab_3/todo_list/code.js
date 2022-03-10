@@ -5,7 +5,7 @@ function add(){
     if(input.value != ""){
         let v = document.createElement("div")
         v.className = "task"
-
+        
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.className = "nura";
