@@ -1,0 +1,20 @@
+<div *ngFor="let category of categories" class="ctg">
+    <img src={{category.image}} alt="" width="150px" height="150px">
+    <p>{{category.name}}</p>
+    <button type="button" (click)="show(category)">
+        Show
+    </button>
+
+</div>
+
+<!-- <div *ngfor="let product of products">
+    <img src={{product.image}} width="200px" height="200px">
+    
+    <h2>{{product.name}}</h2>
+
+    <p>
+        {{product.price}}
+    </p>
+</div> -->
+
+

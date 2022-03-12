@@ -8,15 +8,17 @@
     </h3>
 
     <p>
-        Price: {{product.price}} <br/>
+        Price: {{product.price}}</p>
+    <p>
         Description: {{product.description}}
     </p>
-
-    <button type="button" (click)="share(product.link || '')">
-        Share
-    </button>
-    <button type="button" (click)="change(product)">
-        Change
-    </button>
+    <div class="buts">
+        <button type="button" (click)="share(product.link || '')">
+            Share
+        </button>
+        <button type="button" (click)="change(product)">
+            Change
+        </button>
+    </div>
 
 </div>
