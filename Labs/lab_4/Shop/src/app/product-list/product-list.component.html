@@ -1,0 +1,22 @@
+
+<div *ngFor="let product of products" class="prods">
+    <img src={{product.image[product.pos]}} width="223px" height="223px">
+    <h3>
+        <a href={{product.link}} [title]="product.name + ' details' ">
+            {{product.name}}
+        </a>
+    </h3>
+
+    <p>
+        Price: {{product.price}} <br/>
+        Description: {{product.description}}
+    </p>
+
+    <button type="button" (click)="share(product.link || '')">
+        Share
+    </button>
+    <button type="button" (click)="change(product)">
+        Change
+    </button>
+
+</div>
