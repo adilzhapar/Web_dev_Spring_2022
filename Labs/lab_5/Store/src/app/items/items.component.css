@@ -1,8 +1,14 @@
+
 .it{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 2%;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 img{
     max-width: 100%;
@@ -14,3 +20,18 @@ img{
     flex-direction: row;
     gap: 2%;
 }
+
+button{
+    background-color: #950740;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+}
+
+p{
+    font-size: 15px;
+}
+

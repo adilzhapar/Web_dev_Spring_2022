@@ -9,10 +9,9 @@
             {{product.price}}
         </p>
         <div class="buts">
-        <button type="button" (click)="delete(i)">delete</button>
-        <button type="button" (click)="like(product)">
-            like
-        </button>
+            <button type="button" (click)="delete(i)"><i class="material-icons" style="font-size:16px; padding: 4px">clear</i></button>
+            <button type="button" (click)="like(product)"><i class="material-icons" style="font-size:16px; padding: 4px">thumb_up</i>
+            </button>
         </div>
         <p>{{product.likes}}</p>
     </div>

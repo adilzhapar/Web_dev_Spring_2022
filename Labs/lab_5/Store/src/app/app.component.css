@@ -3,5 +3,7 @@ app-product-list{
     flex-direction: row;
     align-items: flex-start;
     gap: 3%;
+    background-color: #1a1a1d;
+    height: 100%;
     /* border: 1px solid red; */
 }
