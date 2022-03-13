@@ -16,6 +16,8 @@ export class ProductListComponent implements OnInit {
     for(let product of products){
       if(product.category == category.name){
         product.isShow = true;
+      }else{
+        product.isShow = false;
       }
     }
   }

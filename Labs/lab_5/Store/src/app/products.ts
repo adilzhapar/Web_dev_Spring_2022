@@ -27,7 +27,7 @@ export const products = [
       image: "https://m.media-amazon.com/images/I/61bfdXk7nfL._AC_SX466_.jpg",
       likes: 0,
       isShow: false
-      },
+    },
     {
       id: 3,
       name: 'OnePlus 9',
@@ -185,11 +185,11 @@ export const products = [
     {
         id: 20,
         name: "Acer Predator",
+        category: 'Monitors',
         price: 1500,
         image: "https://m.media-amazon.com/images/I/714b7UD3yKL._AC_UY327_FMwebp_QL65_.jpg",
         likes: 0,
         isShow: false
     }
-    
 
   ];

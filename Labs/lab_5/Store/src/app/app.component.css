@@ -1,5 +1,7 @@
 app-product-list{
     display: flex;
     flex-direction: row;
-    gap: 3%;    
+    align-items: flex-start;
+    gap: 3%;
+    /* border: 1px solid red; */
 }

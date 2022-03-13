@@ -1,0 +1,19 @@
+
+<div *ngFor="let product of products; let i = index" >
+    <div *ngIf="category.name == product.category && product.isShow" class="it">
+        <img src={{product.image}} width="200px" height="200px">
+        
+        <h2>{{product.name}}</h2>
+
+        <p>
+            {{product.price}}
+        </p>
+        <div class="buts">
+        <button type="button" (click)="delete(i)">delete</button>
+        <button type="button" (click)="like(product)">
+            like
+        </button>
+        </div>
+        <p>{{product.likes}}</p>
+    </div>
+</div>
