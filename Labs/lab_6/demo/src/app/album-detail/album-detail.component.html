@@ -1,0 +1,22 @@
+<div *ngIf="loaded && album">
+    <h2>Album Detail #{{album.id}}</h2>
+
+    <input type="text" [(ngModel)]="album.title">
+
+    <p>{{album.title}}</p>
+
+    <button (click)="updateAlbum()">Save</button>
+    <button (click)="goBack()">Go Back</button>
+    <button (click)="showComments()">Show Comments</button>
+
+</div>
+
+<p *ngIf="!loaded">Loading post...</p>
+
+
+
+<ul *ngIf="comments.length">
+    <li *ngFor="let comment of comments">
+        {{comment.id}} {{comment.name}} - {{comment.email}}
+    </li>
+</ul>
