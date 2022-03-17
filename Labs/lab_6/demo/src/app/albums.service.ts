@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of} from 'rxjs';
-import { Album, Comment } from './models';
+import { Album, Comment, Photo } from './models';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,10 @@ export class AlbumsService {
 
   getAlbums(): Observable<Album[]>{
     return this.client.get<Album[]>(`${this.BASE_URL}/albums`);
+  }
+
+  getPhotos(id: number): Observable<any>{
+    return this.client.get(`${this.BASE_URL}/albums/${id}/photos`);
   }
 
   getAlbum(id: number){
@@ -34,6 +38,8 @@ export class AlbumsService {
   getAlbumComments(id: number): Observable<Comment[]>{
     return this.client.get<Comment[]>(`${this.BASE_URL}/albums/${id}/comments`);
   }
+
+  
   
 
   

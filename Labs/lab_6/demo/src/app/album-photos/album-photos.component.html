@@ -1,1 +1,14 @@
-<p>album-photos works!</p>
+<div *ngIf="loaded">
+	<h2>Photos Of Album: </h2>
+	<div class="back-btn  ">
+		<button (click)="goBack()">Go Back</button>
+	</div>
+	<ul *ngIf="photos">
+		<li *ngFor="let photo of photos">
+			{{photo.id}} {{photo.title}}
+			<img src="{{photo.url}}" alt="photo of album">
+		</li>
+	</ul>
+</div>
+
+<p *ngIf="!loaded">Loading album...</p>

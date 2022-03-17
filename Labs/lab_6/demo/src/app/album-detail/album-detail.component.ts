@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Album, Comment } from '../models';
+import { Album, Comment, Photo } from '../models';
 import { Location } from '@angular/common';
 import { AlbumsService } from '../albums.service';
 
@@ -13,6 +13,8 @@ export class AlbumDetailComponent implements OnInit {
   album: Album | undefined;
   loaded: boolean | undefined;
   comments: Comment[];
+  photo: Photo | undefined;
+  photos: Photo[] | undefined;
   
   constructor(private route: ActivatedRoute,
               private location: Location,

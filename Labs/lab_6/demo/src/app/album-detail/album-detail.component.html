@@ -9,14 +9,26 @@
     <button (click)="goBack()">Go Back</button>
     <button (click)="showComments()">Show Comments</button>
 
+    <div class="photo-link">
+        <a [routerLink]="['photos']">Photos of album</a>
+    </div>
+    
+
 </div>
 
-<p *ngIf="!loaded">Loading post...</p>
-
-
+<p *ngIf="!loaded">Loading album...</p>
 
 <ul *ngIf="comments.length">
     <li *ngFor="let comment of comments">
         {{comment.id}} {{comment.name}} - {{comment.email}}
     </li>
 </ul>
+
+<ul *ngIf="photos">
+	<li *ngFor="let photo of photos">
+	  {{photo.id}}) {{photo.title}}
+	  <img src="{{photo.url}}" alt="photo of album">
+	</li>
+</ul>
+
+
