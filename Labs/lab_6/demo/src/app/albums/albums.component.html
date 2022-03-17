@@ -1,4 +1,4 @@
-<h2>Albums list</h2>
+<h1>Albums list</h1>
 
 <fieldset>
     <input type="text" [(ngModel)]="newAlbum">
@@ -7,7 +7,7 @@
 
 <ul *ngIf="loaded">
     <li *ngFor="let album of albums">
-        <a [routerLink]="['/albums', album.id]">{{album.id}} {{album.title}}</a>
-        <button (click)="deleteAlbum(album.id)">x</button>
+        <a [routerLink]="['/albums', album.id]">{{album.id}}) {{album.title}}</a>
+        <button id="del" (click)="deleteAlbum(album.id)">x</button>
     </li>
 </ul>

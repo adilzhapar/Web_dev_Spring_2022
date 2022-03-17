@@ -1,0 +1,39 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+}
+button{
+    color: aliceblue;
+    background-color: rgb(119, 8, 32);
+    border: 1px solid rgb(119, 8, 32);
+    border-radius: 8%;
+    padding: 1%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    font-size: large;
+}
+
+button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+}
+
+.txt{
+    font-size: larger;
+    color: aliceblue;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+img{
+    margin-left: 2%;
+}

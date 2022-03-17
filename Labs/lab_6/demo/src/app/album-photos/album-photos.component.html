@@ -5,8 +5,8 @@
 	</div>
 	<ul *ngIf="photos">
 		<li *ngFor="let photo of photos">
-			{{photo.id}} {{photo.title}}
-			<img src="{{photo.url}}" alt="photo of album">
+			<div class="txt">{{photo.id}}) {{photo.title}}</div>
+			<img src="{{photo.url}}" alt="photo of album" width="200px" height="200px">
 		</li>
 	</ul>
 </div>

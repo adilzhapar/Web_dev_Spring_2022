@@ -1,0 +1,55 @@
+h1{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+}
+
+input{
+    background-color: aliceblue;
+    margin: 1%;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding-left: 1%;
+}
+
+button{
+    color: aliceblue;
+    background-color: rgb(119, 8, 32);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+    padding: 0.5%;
+}
+button:hover{
+    cursor: pointer;
+}
+
+fieldset{
+    height: 30%;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 1%;
+}
+
+#del{
+    width: 3%;
+    margin-right: 2%;
+}
+
+a{
+    color: aliceblue;
+    font-size: large;
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5%;
+}

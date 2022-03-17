@@ -1,0 +1,63 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+}
+
+input{
+    background-color: rgb(119, 8, 32);
+    margin-left: 1%;
+    color: aliceblue;
+    font-size: larger;
+    width: 30%;
+    padding-left: 1%;
+    margin-bottom: 1%;
+}
+
+p{
+    font-size: larger;
+    color: aliceblue;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+button{
+    color: aliceblue;
+    background-color: rgb(119, 8, 32);
+    border: 1px solid rgb(119, 8, 32);
+    border-radius: 8%;
+    padding: 1%;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    font-size: large;
+}
+
+button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 2%;
+    font-size: large;
+    background-color: rgb(119, 8, 32);
+    padding: 0.5%;
+    margin-bottom: 2%;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+li{
+    color: aliceblue;
+    margin: 0.5% 0 0 2%;
+
+}

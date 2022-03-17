@@ -1,0 +1,21 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aliceblue;
+    margin: 1% 0 5% 0;
+}
+a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(119, 8, 32);
+    border: 2px solid rgb(119, 8, 32);
+    border-radius: 10%;
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+a:hover{
+    text-decoration: underline;
+}
