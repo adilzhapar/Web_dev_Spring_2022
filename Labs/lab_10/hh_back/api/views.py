@@ -18,7 +18,7 @@ from rest_framework.views import APIView
 
 
 @api_view(['GET', 'POST'])
-# @permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated])
 def company_list(request):
     if request.method == 'GET':
         companies = Company.objects.all()

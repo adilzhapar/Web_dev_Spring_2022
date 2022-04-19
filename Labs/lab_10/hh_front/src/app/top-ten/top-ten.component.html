@@ -1,0 +1,11 @@
+<h1>Vacancies TOP-10</h1>
+
+<ol>
+    <li *ngFor="let vacancy of vacancies">
+        <p>{{vacancy.name}}</p>
+        <p>{{vacancy.description}}</p>
+        <p id="slr">{{vacancy.salary}}</p>
+    </li>
+</ol>
+
+<button class="but" type="button" (click)="goBack()">Go Back</button>

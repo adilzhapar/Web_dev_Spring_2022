@@ -1,1 +1,11 @@
-<p>company-detail works!</p>
+<h1>Vacancies</h1>
+
+<ul>
+    <li *ngFor="let vacancy of vacancies">
+        <p>{{vacancy.name}}</p>
+        <p>{{vacancy.description}}</p>
+        <p>{{vacancy.salary}}</p>
+    </li>
+</ul>
+
+<button class="but" type="button" (click)="goBack()">Go Back</button>

@@ -1,7 +1,20 @@
 <h1>Companies</h1>
 
-<ul>
+<div class="input">
+    <input type="text" [(ngModel)]="newCompany" placeholder="name">
+    <input type="text" [(ngModel)]="newDesc" placeholder="description">
+    <input type="text" [(ngModel)]="newCity" placeholder="city">
+    <input type="text" [(ngModel)]="newAddress" placeholder="address">
+    <button id="add" (click)="addCompany()">Add Company</button>
+</div>
+
+<ol>
     <li *ngFor="let company of companies">
-        <p>{{company.id}}) {{company.name}}</p>
+        <a [routerLink]="['/companies', company.id, 'vacancies']">{{company.name}}</a>
+        <p>{{company.description}}</p>
+        <p>{{company.city}}, {{company.address}}</p>
+        <button id="del" (click)="deleteCompany(company.id)">x</button>
     </li>
-</ul>
+</ol>
+
+<a id="top" [routerLink]="['/vacancies', 'top_ten']">Top Ten Vacancies</a>

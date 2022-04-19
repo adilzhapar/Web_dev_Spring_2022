@@ -1,4 +1,4 @@
-<div *ngIf="!logged">
+<div *ngIf="!logged" id="login">
     <h1>Login form</h1>
     <p>Username: <input type="text" [(ngModel)]="username"></p>
     <p>Password: <input type="text" [(ngModel)]="password"></p>
@@ -7,5 +7,5 @@
   
 <div *ngIf="logged">
     <router-outlet></router-outlet>
-    <button (click)="logout()">Logout</button>
+    <button id="out" (click)="logout()">Logout</button>
 </div>
